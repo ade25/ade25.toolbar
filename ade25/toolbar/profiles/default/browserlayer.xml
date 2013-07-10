@@ -1,6 +1,6 @@
 <layers>
   <layer
     name="ade25.toolbar.layer"
-    interface="ade25.toolbar.interfaces.Iade25Toolbar"
+    interface="ade25.toolbar.interfaces.IAde25Toolbar"
   />
 </layers>
