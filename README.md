@@ -45,7 +45,7 @@ purpose, since it might conflict with the themes primary usecases)
 height), example:
     
 ``` css
-.header + .app-header {
+.app-toolbar + .app-brandbar {
     margin-top: @navbarHeight;
 }
 ```
