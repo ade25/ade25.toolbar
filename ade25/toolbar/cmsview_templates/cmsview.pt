@@ -16,26 +16,21 @@
 
     <header class="page-header">
       <h1 class="documentFirstHeading">
-        Redaktionssystem <small>Zugriff Bearbeitungsoberfl&auml;che</small>
+        CMS <small>Bearbeitungsoberfl&auml;che</small>
       </h1>
     </header>
 
     <div id="content-core">
-      <div class="row" tal:condition="portal_state/anonymous">
-        <div class="col col-8 col-lg-8">
+      <div tal:condition="portal_state/anonymous">
           <p class="lead">
-            Willkommen, um sich auf
-            der Bearbeitungsoberfl&auml;che des Redaktionssystems anzumelden
+            Um sich auf der Bearbeitungsoberfl&auml;che des Redaktionssystems anzumelden
             verwenden Sie bitte den Link <strong>Anmelden</strong>
           </p>
-        </div>
-        <div class="col col-4 col-kg-4">
           <a href=""
-            class="btn btn-large btn-primary btn-block popoverLogin"
+            class="btn btn-lg btn-primary popoverLogin"
             tal:attributes="href python:context_url + '/login_form'">
-            <i class="icon-signin" />
+            <i class="icon-signin"></i>
             Anmelden</a>
-        </div>
       </div>
 
       <tal:signout tal:condition="not:portal_state/anonymous">
