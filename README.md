@@ -38,14 +38,14 @@ purpose, since it might conflict with the themes primary usecases)
 * Add a rule to include the toolbar via Diazo e.g.
 
 ``` xml
-<replace css:theme="#editbar-wrapper" css:content="#toolbar" />
+<replace css:theme="#toolbar" css:content="#toolbar" />
 ```
 
 * Make room for the toolbar by moving the main site down by 40px (the toolbar
 height), example:
     
 ``` css
-#toolbar + #site-wrapper {
+.header + .app-header {
     margin-top: @navbarHeight;
 }
 ```
